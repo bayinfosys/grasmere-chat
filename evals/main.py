@@ -1,4 +1,4 @@
-"""grasmere-evals: the same Welsh prompts to every model, answers side by side.
+"""evals: the same Welsh prompts to every model, answers side by side.
 
 For each model in models.yaml, in order, and each prompt in
 prompts.jsonl, this sends one chat completion through the Marigold API

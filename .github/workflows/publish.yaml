@@ -15,13 +15,12 @@ permissions:
   pages: write
   id-token: write
 
-# registry.yml and marigold-version must name the marigold release with
-# manifests and tag versions (registry build --version). 0.8.1 predates
-# both and rejects applications without a version.
+# registry.yml and marigold-version name the marigold release that
+# builds the registry: 0.8.2 is the first with manifests and tag versions.
 jobs:
   registry:
-    uses: bayinfosys/marigold/.github/workflows/registry.yml@v0.9.0
+    uses: bayinfosys/marigold/.github/workflows/registry.yml@v0.8.2
     with:
-      marigold-version: "0.9.0"
+      marigold-version: "0.8.2"
       site-builder: ghcr.io/bayinfosys/jekyll-site-builder:v0.0.2
       deploy: ${{ startsWith(github.ref, 'refs/tags/v') }}

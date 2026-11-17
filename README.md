@@ -6,8 +6,13 @@ Gemma 4 E4B fine-tuned for Welsh, Irish, Scottish Gaelic and Scots.
 
 | Application | Directory | What it does |
 |---|---|---|
-| `grasmere-chat` | [chat](chat/) | chat with the Grasmere models through Open WebUI |
-| `grasmere-evals` | [evals](evals/) | the same Welsh prompts to each Grasmere model and stock Gemma 4, answers side by side |
+| `chat` | [chat](chat/) | chat with the Grasmere models through Open WebUI |
+| `evals` | [evals](evals/) | the same Welsh prompts to each Grasmere model and stock Gemma 4, answers side by side |
+
+The names are deliberately those of applications in other registries,
+such as `chat` in [marigold-examples](https://examples.marigold.run):
+a host with both registries resolves `chat` to whichever it lists
+first.
 
 The registry is published at `https://grasmere-chat.marigold.run`.
 
@@ -21,19 +26,19 @@ git clone https://github.com/bayinfosys/grasmere-chat
 cd grasmere-chat
 
 marigold application create chat -o dist/
-marigold application install dist/grasmere-chat-local.tar.gz
-marigold cache populate grasmere-chat
-marigold application start grasmere-chat      # Open WebUI at http://localhost:3000
+marigold application install dist/chat-local.tar.gz
+marigold cache populate chat
+marigold application start chat               # Open WebUI at http://localhost:3000
 ```
 
 The evaluation, the same way:
 
 ```sh
 marigold application create evals -o dist/
-marigold application install dist/grasmere-evals-local.tar.gz
-marigold cache populate grasmere-evals        # needs HF_TOKEN for google/gemma-4-e4b-it
-marigold application start grasmere-evals
-marigold application logs grasmere-evals
+marigold application install dist/evals-local.tar.gz
+marigold cache populate evals                 # needs HF_TOKEN for google/gemma-4-e4b-it
+marigold application start evals
+marigold application logs evals
 ```
 
 Its results are written to the application's outputs directory under
@@ -42,7 +47,7 @@ the Marigold cache.
 ## Layout
 
 Each application is one directory below the root, holding its
-`marigold.toml`. `marigold-registry.toml` at the root describes the
+`marigold.toml`, and the directory's name is the application's name. `marigold-registry.toml` at the root describes the
 registry. Pushing a `v*` tag publishes every application under that
 tag.
 

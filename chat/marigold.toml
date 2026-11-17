@@ -1,5 +1,5 @@
 [application]
-name = "grasmere-chat"
+name = "chat"
 description = "Chat in Welsh, Irish, Scottish Gaelic and Scots through Open WebUI, with the Grasmere models."
 models_yaml = ["models.yaml"]
 compose_files = ["webui"]

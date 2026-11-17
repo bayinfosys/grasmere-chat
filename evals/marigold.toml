@@ -1,5 +1,5 @@
 [application]
-name = "grasmere-evals"
+name = "evals"
 description = "Runs a fixed set of Welsh prompts against each Grasmere model and stock Gemma 4, and writes the answers side by side with time and repetition measures."
 models_yaml = ["models.yaml"]
 

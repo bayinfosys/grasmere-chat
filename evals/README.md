@@ -1,4 +1,4 @@
-# grasmere-evals
+# evals
 
 The same Welsh prompts to every model, with the answers side by side.
 It runs each prompt in `prompts.jsonl` against each model in

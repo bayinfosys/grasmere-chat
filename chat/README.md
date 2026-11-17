@@ -1,4 +1,4 @@
-# grasmere-chat
+# chat
 
 Chat in Welsh, Irish, Scottish Gaelic and Scots through
 [Open WebUI](https://docs.openwebui.com/), with the
