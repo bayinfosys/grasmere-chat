@@ -1,0 +1,32 @@
+_templates:
+  instruct: &instruct
+    provider: huggingface
+    type: instruct
+    input: chat
+    output: chat
+
+models:
+
+  - <<: *instruct
+    name: jonpojonpo/grasmere-e4b-ftpo
+    description: >
+      Gemma 4 E4B fine-tuned for Welsh, Irish, Scottish Gaelic and Scots,
+      with the FTPO anti-repetition fix. The variant the model card
+      recommends for everyday use.
+
+  - <<: *instruct
+    name: jonpojonpo/grasmere-e4b
+    description: >
+      Gemma 4 E4B fine-tuned for the Celtic languages and English. The
+      highest benchmark scores; long answers loop more often than FTPO.
+
+  - name: sentence-transformers/all-minilm-l6-v2
+    provider: huggingface
+    type: text-embedding
+    input: text
+    output: vector/384
+    parameters:
+      vector_size: 384
+    description: >
+      Open WebUI's document embedding model (RAG_EMBEDDING_MODEL on the
+      open-webui service).

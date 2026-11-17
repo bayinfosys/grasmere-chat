@@ -1,0 +1,9 @@
+[registry]
+title = "Grasmere"
+description = "Welsh and Celtic-language chat and evaluation on Marigold, with the Grasmere models."
+
+[registry.urls]
+source = "https://github.com/bayinfosys/grasmere-chat"
+registry = "https://grasmere-chat.marigold.run"
+model = "https://huggingface.co/jonpojonpo/Grasmere-E4B"
+maintainer = "https://www.bayis.co.uk"

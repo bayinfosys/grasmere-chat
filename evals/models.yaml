@@ -1,0 +1,27 @@
+_templates:
+  instruct: &instruct
+    provider: huggingface
+    type: instruct
+    input: chat
+    output: chat
+
+# Every model listed here is evaluated, in this order. Add a new
+# Grasmere release as one more entry.
+models:
+
+  - <<: *instruct
+    name: jonpojonpo/grasmere-e4b-ftpo
+    description: >
+      Grasmere with the FTPO anti-repetition fix.
+
+  - <<: *instruct
+    name: jonpojonpo/grasmere-e4b
+    description: >
+      Grasmere, the highest benchmark variant.
+
+  - <<: *instruct
+    name: google/gemma-4-e4b-it
+    description: >
+      Stock Gemma 4 E4B, the model Grasmere is fine-tuned from: the
+      baseline. Gated on Hugging Face: accept the licence there and set
+      HF_TOKEN before cache populate.

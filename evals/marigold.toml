@@ -1,0 +1,16 @@
+[application]
+name = "grasmere-evals"
+description = "Runs a fixed set of Welsh prompts against each Grasmere model and stock Gemma 4, and writes the answers side by side with time and repetition measures."
+models_yaml = ["models.yaml"]
+
+[application.urls]
+repository = "https://github.com/bayinfosys/grasmere-chat"
+model = "https://huggingface.co/jonpojonpo/Grasmere-E4B"
+
+[execution]
+command = ["python", "main.py"]
+
+[environment]
+EVAL_TEMPERATURE = "0.3"
+EVAL_TOP_P = "0.9"
+EVAL_MAX_TOKENS = "512"

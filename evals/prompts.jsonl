@@ -1,0 +1,12 @@
+{"id": "cy-know-capital", "group": "knowledge", "messages": [{"role": "user", "content": "Beth yw prifddinas Cymru, a phryd y daeth hi'n brifddinas?"}]}
+{"id": "cy-know-rainbow", "group": "knowledge", "messages": [{"role": "user", "content": "Esboniwch yn syml sut mae enfys yn ffurfio."}]}
+{"id": "cy-know-eisteddfod", "group": "knowledge", "messages": [{"role": "user", "content": "Beth yw'r Eisteddfod Genedlaethol, a beth sy'n digwydd yno?"}]}
+{"id": "cy-lang-mutation", "group": "language", "messages": [{"role": "user", "content": "Beth yw'r treiglad meddal yn y Gymraeg? Rhowch ddwy enghraifft."}]}
+{"id": "cy-lang-learning", "group": "language", "messages": [{"role": "user", "content": "Rhowch dri awgrym i rywun sy'n dechrau dysgu Cymraeg."}]}
+{"id": "en-cy-train", "group": "translation", "messages": [{"role": "user", "content": "Cyfieithwch i'r Gymraeg: \"The train to Aberystwyth leaves at half past nine tomorrow morning.\""}]}
+{"id": "en-cy-weather", "group": "translation", "messages": [{"role": "user", "content": "Cyfieithwch i'r Gymraeg: \"Please remember to bring your coat; the forecast says it will rain all afternoon.\""}]}
+{"id": "cy-en-library", "group": "translation", "messages": [{"role": "user", "content": "Translate into English: \"Mae'r llyfrgell ar gau ar ddydd Sul, ond mae hi ar agor tan wyth o'r gloch nos Iau.\""}]}
+{"id": "cy-summary-eryri", "group": "summary", "messages": [{"role": "user", "content": "Crynhowch y paragraff canlynol mewn un frawddeg:\n\nMae Eryri yn ardal fynyddig yng ngogledd-orllewin Cymru. Yr Wyddfa yw'r mynydd uchaf yng Nghymru, ac mae miloedd o bobl yn ei ddringo bob blwyddyn. Mae'r ardal hefyd yn enwog am ei llynnoedd, ei rheilffyrdd bach a'i phentrefi Cymraeg eu hiaith."}]}
+{"id": "cy-write-invite", "group": "writing", "messages": [{"role": "user", "content": "Ysgrifennwch neges fer yn gwahodd ffrind i swper nos Sadwrn."}]}
+{"id": "cy-long-dragon", "group": "long", "messages": [{"role": "user", "content": "Ysgrifennwch stori fer, tua 300 gair, am ffermwr sy'n dod o hyd i ddraig yn ei sgubor."}], "max_tokens": 768}
+{"id": "cy-long-season", "group": "long", "messages": [{"role": "user", "content": "Disgrifiwch eich hoff dymor a pham, mewn tri pharagraff."}], "max_tokens": 768}
